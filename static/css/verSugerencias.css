@@ -1,0 +1,106 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Black+Ops+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200..900&display=swap');
+
+.contenedor{
+    max-width: 100%;
+    min-height: 100vh;
+    font-family: 'Inconsolata';
+    user-select: none;
+}
+
+.titulo-no-hay-sugerencias{
+    position: absolute;
+    margin-top: 160px;
+}
+
+.titulo-no-hay-sugerencias h1{
+    font-size: 60px;
+    max-width: 760px;
+    text-align: center;
+}
+
+header{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+
+.titulo{
+    max-width: 100%;
+    height: 290px;
+    background: linear-gradient(rgba(0,0,0,0.40),rgba(0,0,0,0.20)),url(../img/fondo-titulo-ver-sugerencias.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo h1{
+    font-family: 'Black Ops One', sans-serif;
+    font-size: 65px;
+    color: #fff;
+}
+
+.contenedor-sugerencias{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    place-items: center;
+    place-content: center;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.sugerencia{
+    width: 450px;
+    min-height: 200px;
+    padding: 10px;
+    background-color: #FFD3BA;
+    border: solid 3px #03cc3f;
+    box-shadow: 5px 15px 10px rgba(0,0,0,0.60);
+}
+
+.sugerencia h2{
+    font-size: 30px;
+}
+
+.sugerencia:hover{
+    transition: .8s;
+    transform: scale(1.06);
+}
+
+form{
+    margin-top: 16px;
+}
+
+textarea{
+    resize: none;
+    width: 410px;
+    height: 210px;
+    padding: 8px;
+    font-size: 14px;
+}
+
+@media (max-width: 768px){
+    .titulo h1{
+        font-size: 40px;
+        text-align: center;
+    }
+    .contenedor-sugerencias{
+        display: flex;
+        flex-direction: column;
+    }
+    .sugerencia{
+        width: 360px;
+    }
+    textarea{
+        width: 320px;
+        margin-bottom: 10px;
+    }
+    .titulo-no-hay-sugerencias{
+        margin-top: 260px;
+    }
+    .titulo-no-hay-sugerencias h1{
+        font-size: 45px;
+    }
+}
