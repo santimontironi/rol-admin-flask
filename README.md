@@ -1,6 +1,6 @@
-# Sistema de Gestión de Empleados y Noticias
+# Sistema de administrador de la empresa FullWeb
 
-Este proyecto es una aplicación desarrollada con **Flask** y **PyQt5** que permite gestionar empleados, noticias y sugerencias dentro de una organización. Combina una interfaz web accesible mediante navegador con una ventana gráfica para facilitar su uso.
+Este proyecto es una aplicación desarrollada con **Flask** y **PyQt5** que permite gestionar empleados, noticias y sugerencias dentro de una organización, fue realizada para un proyecto final de la universidad, con el fin de aplicar documentación del sistema y buen uso de bases de datos. Combina una interfaz web accesible mediante navegador con una ventana gráfica para facilitar su uso.
 
 ## Funcionalidades principales
 
