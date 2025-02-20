@@ -28,7 +28,7 @@ def agregar_noticias():
         conexion.execute('SELECT * FROM noticias WHERE estado = "publicada"')
         noticias = conexion.fetchall()
     
-    return render_template('agregar-noticias.html', noticias=noticias)
+        return render_template('agregar-noticias.html', noticias=noticias)
 
 @noticias_bp.route('/eliminar-noticia',methods=['GET','POST'])
 def eliminar_noticia():
