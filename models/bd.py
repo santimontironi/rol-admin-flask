@@ -1,5 +1,7 @@
 from flask_mysqldb import MySQL
 
+mysql = MySQL()
+
 def inicializar_bd(app):
     app.config['MYSQL_HOST'] = 'localhost'
     app.config['MYSQL_USER'] = 'root'
